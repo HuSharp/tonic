@@ -20,7 +20,8 @@ bytes = "1"
 tokio-stream = "0.1"
 http = "0.2"
 http-body = "0.4"
-hyper = {version = "0.14", default-features = false, features = ["stream"]}
+# hyper = {version = "0.14", default-features = false, features = ["stream"]}
+hyper = { git = "https://github.com/HuSharp/hyper", branch = "test_ping" , optional = true}
 pin-project = "1"
 tonic = {version = "0.10", path = "../tonic", default-features = false}
 tower-service = "0.3"

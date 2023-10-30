@@ -69,7 +69,8 @@ async-trait = {version = "0.1.13", optional = true}
 
 # transport
 h2 = {version = "0.3.17", optional = true}
-hyper = {version = "0.14.26", features = ["full"], optional = true}
+# hyper = {version = "0.14.26", features = ["full"], optional = true}
+hyper = { git = "https://github.com/HuSharp/hyper", branch = "test_ping" , optional = true}
 hyper-timeout = {version = "0.4", optional = true}
 tokio-stream = "0.1"
 tower = {version = "0.4.7", default-features = false, features = ["balance", "buffer", "discover", "limit", "load", "make", "timeout", "util"], optional = true}
